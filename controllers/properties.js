@@ -44,5 +44,24 @@ exports.getProperties = async (req, res, next) => {
 }
 
 exports.deleteProperty = async (req, res, next) => {
-    console.log('property deleted');
+    try {
+        const property = await Property.findById(req.params.id);
+
+        if (!property){
+            return res.status(404).json({
+                success: false,
+                error: "No property found"
+            })
+        }
+        await property.remove();
+        return res.status(200).json({
+            success: true,
+            data: {}
+        })
+    } catch (err) {
+       return res.send(500).json({
+           success: false,
+           error: 'Server Error'
+       });
+    }
 }

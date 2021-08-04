@@ -4,7 +4,7 @@ const Property = require('../Models/Property');
 //fix addProperty post request function
 exports.addProperty = async (req, res, next) => {
     try {
-        const { address, location, askingPrice, numBedrooms, numBathrooms, sqMeters, description } = req.body;
+        const { address, location, askingPrice, numBedrooms, numBathrooms, sqMeters, description, imgURL } = req.body;
         const property = await Property.create(req.body);
         return res.status(201).json({
             success: true,

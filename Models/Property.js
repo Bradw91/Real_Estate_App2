@@ -29,6 +29,14 @@ const PropertySchema = new mongoose.Schema({
     description: {
         type: String,
         required: false
+    },
+    imgURL: {
+        type: String,
+        required: false
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
     }
 })
 

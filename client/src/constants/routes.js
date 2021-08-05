@@ -1,6 +1,8 @@
 //NAV Pages
 export const HOME = "/";
-export const PROPERTIES = "/properties";
+export const SHORT_TERM_RENT = "/short-term-rent";
+export const POST_LISTING = "/listing";
+export const ABOUT = "/about";
 
 //ACCOUNT PAGES
 

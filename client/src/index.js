@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
+//need to hook up app to be rendered
 ReactDOM.render(
   <React.StrictMode>
     <App />

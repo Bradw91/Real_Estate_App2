@@ -15,19 +15,14 @@
     "nodemon": "^2.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-slick": "^0.28.1",
-    "sass": "^1.37.5",
-    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000/"
 }

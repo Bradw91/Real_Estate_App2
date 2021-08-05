@@ -21,21 +21,13 @@ export default class Banner extends React.Component{
             )            
         };
         return (
-            <section id="banner">
-                <div className="content">
-                    <Slider {...settings}>
-                        <div>
+          <section id="banner">
+            <div className="content">
+              <Slider {...settings}>
 
-                        </div>
-                        <div>
-
-                        </div>
-                        <div>
-
-                        </div>
-                    </Slider>
-                </div>
-            </section>
+              </Slider>
+            </div>
+          </section>
         );
     }
 }

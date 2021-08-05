@@ -1,8 +1,12 @@
 header {
   border-bottom: 1px solid #ededed;
   nav {
+    z-index: 1;
+    background-color: white;
     display: grid;
     width: 100%;
+    position: fixed;
+    text-align: center;
     grid-template-columns: max-content max-content max-content max-content max-content max-content;
 
     align-content: center;
@@ -11,7 +15,7 @@ header {
     a {
       font-weight: bold;
       margin-right: 30px;
-      color: cornflowerblue;
+      color: black;
       position: relative;
       display: inline;
       &:hover {
@@ -23,7 +27,7 @@ header {
       }
       &::after,
       &::before {
-        background: none repeat scroll 0 0 black;
+        background: none repeat scroll 0 0 #663eb5;
       }
       &::after {
         content: "";
@@ -59,14 +63,25 @@ header {
     }
   }
 
+  #nav-links {
+    text-align: center;
+    padding-top: 12px;
+  }
+
   #logo {
     font-size: 2.5rem;
     color: #663eb5;
     padding: 10px 10px 10px 30px;
     img {
-      max-height: 80px;
+      max-height: 50px;
       display: block;
     }
+  }
+
+  #page{
+    text-align: center;
+    float: center;
+    display: inline;
   }
 
   #login {
@@ -78,14 +93,14 @@ header {
     font-size: 0.8rem;
     font-weight: bold;
     align-self: center;
-    color: cornflowerblue;
+    color: black;
     i {
       color: #666;
       font-size: 1.1rem;
       margin-right: 5px;
     }
     &:hover {
-      background: black;
+      background: #20822f;
       color: white;
       text-decoration: none;
       i {

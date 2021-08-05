@@ -7,18 +7,20 @@ export default class Header extends React.Component{
   render () {
     return (
       <header>
-        <div id="logo">
-          <img /> 
-        </div>
         <nav>
-          <Link to={routes.SHORT_TERM_RENT}>Rent</Link>
-          <Link to={routes.POST_LISTING}>Post Listing</Link>
-          <Link to={routes.ABOUT}>About</Link>
-        </nav>
-        <Link to={routes.SIGN_IN} id="login">
+        <div id="logo">
+          <img style={{ maxwidth: "100%" }} src="/img/logo.png"/> 
+        </div>  
+        <div id="nav-links">
+          <Link to={routes.SHORT_TERM_RENT} id="page">Rent</Link>
+          <Link to={routes.POST_LISTING} id="page">Post Listing</Link>
+          <Link to={routes.ABOUT} id="page">About</Link>  
+          <Link to={routes.SIGN_IN} id="login">
           <i className="far fa-user"/>
           Sign In
         </Link>
+        </div>
+        </nav>
       </header>
     );
   }

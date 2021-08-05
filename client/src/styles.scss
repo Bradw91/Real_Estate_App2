@@ -1,0 +1,32 @@
+@import "styles/Banner.scss";
+@import "styles/Fonts.scss";
+@import "styles/Header.scss";
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color:cornflowerblue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  background: cornflowerblue;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:disabled{
+    color: #999;
+  }
+}

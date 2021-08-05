@@ -1,0 +1,97 @@
+header {
+  border-bottom: 1px solid #ededed;
+  nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: max-content max-content max-content max-content max-content max-content;
+
+    align-content: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    a {
+      font-weight: bold;
+      margin-right: 30px;
+      color: cornflowerblue;
+      position: relative;
+      display: inline;
+      &:hover {
+        text-decoration: none;
+        &::after,
+        &::before {
+          width: 50%;
+        }
+      }
+      &::after,
+      &::before {
+        background: none repeat scroll 0 0 black;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        left: 50%;
+        height: 2px;
+        position: absolute;
+        bottom: -8px;
+        -webkit-transition: width 200ms ease-out;
+        -moz-transition: width 200ms ease-out;
+        -o-transition: width 200ms ease-out;
+        -ms-transition: width 200ms ease-out;
+        transition: width 200ms ease-out;
+        outline: 1px solid transparent;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 0%;
+        right: 50%;
+        height: 2px;
+        position: absolute;
+        bottom: -8px;
+        -webkit-transition: width 200ms ease-out;
+        -moz-transition: width 200ms ease-out;
+        -o-transition: width 200ms ease-out;
+        -ms-transition: width 200ms ease-out;
+        transition: width 200ms ease-out;
+        outline: 1px solid transparent;
+      }
+    }
+  }
+
+  #logo {
+    font-size: 2.5rem;
+    color: #663eb5;
+    padding: 10px 10px 10px 30px;
+    img {
+      max-height: 80px;
+      display: block;
+    }
+  }
+
+  #login {
+    border-left: 1px solid #ededed;
+    text-align: right;
+    padding: 10px 30px;
+    line-height: 2.7rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    align-self: center;
+    color: cornflowerblue;
+    i {
+      color: #666;
+      font-size: 1.1rem;
+      margin-right: 5px;
+    }
+    &:hover {
+      background: black;
+      color: white;
+      text-decoration: none;
+      i {
+        color: white;
+      }
+    }
+    transition: all 400ms ease-out;
+  }
+}
